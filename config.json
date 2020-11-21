@@ -1,0 +1,4 @@
+{
+  "prefix": "$",
+  "notFound": "Command not found, try $help to get the available commands."
+}
