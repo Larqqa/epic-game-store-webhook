@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bot to get the free game discounts from the Epic Game Store.",
   "main": "index.js",
-  "author": "",
+  "author": "larqqa",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",

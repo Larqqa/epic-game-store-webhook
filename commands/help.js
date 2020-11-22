@@ -1,6 +1,6 @@
 const allCommands = [
   ' help',
-  ' free [all | now | next]'
+  ' free [all | next]'
 ];
 
 module.exports.run = async (client, message, args) => {

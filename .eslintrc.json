@@ -56,6 +56,13 @@
 		"object-curly-spacing": [
 			"error",
 			"always"
-		]
+		],
+		"keyword-spacing": [
+			"error",
+			{
+				"before": true
+			}
+		],
+		"space-infix-ops": "error"
 	}
 }
