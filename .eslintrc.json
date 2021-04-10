@@ -1,23 +1,14 @@
 {
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true,
-		"node": true,
-		"jest": true
-	},
-	"extends": "eslint:recommended",
-	"globals": {
-		"Atomics": "readonly",
-		"SharedArrayBuffer": "readonly"
-	},
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"ecmaVersion": 2018,
-		"sourceType": "module"
-	},
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
 	"rules": {
 		"no-trailing-spaces": [
 			"error",
@@ -37,6 +28,10 @@
 			"error",
 			2
 		],
+		"@typescript-eslint/indent": [
+			"error",
+			2
+		],
 		"linebreak-style": [
 			"error",
 			"unix"
@@ -48,6 +43,9 @@
 		"semi": [
 			"error",
 			"always"
+		],
+		"@typescript-eslint/no-extra-semi": [
+			"off"
 		],
 		"array-bracket-spacing": [
 			"error",

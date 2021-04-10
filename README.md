@@ -1,25 +1,32 @@
-Original work: [EpicDiscordBot](https://github.com/lucasrennok/EpicDiscordBot)
+# Webhook for free games on Epic Game store
 
-This bot gets the free games discounts from Epic Game Store.
-The bot fetches the games from this [page](https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions).
+This is a simple webhook for sending the free games over a webhook to a discord server.\
+The source is written in TypeScript and uses OOP for formatting the JSON and embed.
 
-Scripts:
-`npm start`: To start the bot</br>
-`npm run watch`: To start the dev server</br>
-`npm run lint`: To lint the code</br>
-`npm run lint:fix`: To lint and fix the code</br>
+## Installation
 
-Commands:
-`$free`: Shows current discounts</br>
-`$free all`: Shows the current and future discounts</br>
-`$free next`: Shows the future discounts</br>
-`$help`: shows the bot commands</br>
+Clone the repository and move into the cloned directory\
+Run the command `npm install` to install the dependencies\
+Run the command `npm run build` to make a production build\
+Make a `.env` file in the project folder with the following variable:
+```
+WEBHOOK=replace_this_your_webhook_url
+```
 
-ENV (see: .env-template):
-`TOKEN`: This is the bot token</br>
-`CHANNEL`: This is the ID of the channel you want the bot to run in</br>
-`SECRET`: A secret token for sending automated messages of the discounts</br>
+## Scripts
 
-Config:
-`prefix`: The prefix for the bot commands</br>
-`port`: The port for the server</br>
+### `npm start`
+this starts the development environment.\
+This project uses Nodemon for watching and building during development.
+
+### `npm run build`
+This removes the old build folder and makes a fresh production build.
+
+### `npm run send`
+This runs the webhook script from `./build` and sends the embeds.
+
+### `npm run lint`
+This lints the source files with EsLint
+
+### `npm run lint:fix`
+This lints the source files and fixes the errors.
